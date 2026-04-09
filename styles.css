@@ -263,12 +263,13 @@ label, input, legend, select {
     width: 95%;
     padding: .5rem;
 }
+/* NOTE: I have a 32" monitor and the original value of -250% was not enough to take it off screen, so I adjusted to -500% */
 .sr-only {
     background: var(--sunset-orange);
     height: 1rem;
     padding: 1.5rem;
     position: absolute;
-    transform: translateX(-250%);
+    transform: translateX(-500%);
     transition: transform 0.3s;
 }
 .sr-only:focus {
